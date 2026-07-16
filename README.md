@@ -17,7 +17,7 @@ Nome         Samir Hanna Verza
 Host         Brasil
 Empresas     Blue3 · B3dev
 Função       builder full-stack · engenharia de IA/LLM
-Kernel       Rust · PHP · Java · TypeScript · Python
+Kernel       Rust · Ruby · PHP · Java · TypeScript · Python
 Shell        bash · anna (CLI agêntica que eu construí)
 DE           GNOME (com extensões próprias)
 Superfícies  web · desktop · mobile · terminal
@@ -47,7 +47,7 @@ graph LR
 |---|---|
 | **[SHVIA](https://ia.blue3.com.br)** | Plataforma de IA multi-superfície — web, desktop (Tauri), [mobile iOS/Android](https://github.com/samirhvbr/SHVIA-MOBILE) e CLI. Gateway BYOK multi-provedor, voz (STT/TTS) e modo código. Nascida na [Blue3](https://blue3.com.br) / [B3dev](https://b3dev.com.br). |
 | **anna** | CLI agêntica em Rust — loop de ferramentas com gates de segurança, embutível em outros apps. É o motor de código do SHVIA. |
-| **SShvTerm** | Terminal SSH (desktop Tauri 2 + mobile) com agente de IA embarcado — o terminal que conversa. |
+| **[SShvTerm](https://sshvterm.com)** | Terminal SSH (desktop Tauri 2 + mobile) com agente de IA embarcado — o terminal que conversa. · [sshvterm.com](https://sshvterm.com) |
 | **EOP** | Enterprise Operating Platform — gestão ledger-first para provedores de internet, na Blue3. |
 
 ## `$ ls ~/open-source/`
@@ -62,10 +62,10 @@ graph LR
 
 ```toml
 [linguagens]
-diarias     = ["Rust", "PHP", "TypeScript", "Java", "Python", "Swift"]
+diarias     = ["Rust", "Ruby", "PHP", "TypeScript", "Java", "Python", "Swift"]
 
 [frameworks]
-apps        = ["Tauri 2", "Laravel", "Spring Boot", "React + Vite"]
+apps        = ["Tauri 2", "Rails", "Laravel", "Spring Boot", "React + Vite"]
 
 [dados]
 bancos      = ["PostgreSQL", "PostGIS", "pgvector", "MariaDB"]
@@ -88,14 +88,18 @@ alvo        = ["web", "desktop Linux/macOS/Windows", "mobile iOS/Android", "CLI"
 ## `$ gh stats --user samirhvbr`
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=samirhvbr&show_icons=true&theme=transparent&locale=pt-br" height="165" alt="stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=samirhvbr&layout=compact&theme=transparent&locale=pt-br" height="165" alt="linguagens" />
+
+[![seguidores](https://img.shields.io/github/followers/samirhvbr?style=for-the-badge&logo=github&label=seguidores&labelColor=161b22&color=1f6feb)](https://github.com/samirhvbr?tab=followers)
+![GitHub Developer Program](https://img.shields.io/badge/GitHub-Developer_Program-238636?style=for-the-badge&logo=github&labelColor=161b22)
+![feito no Brasil](https://img.shields.io/badge/feito_no-Brasil-009c3b?style=for-the-badge&labelColor=161b22)
+
 </div>
 
 ## `$ ping samir`
 
 - 🌐 **[samirhv.com.br](https://samirhv.com.br)** — página pessoal & central de downloads
 - ✍️ **[AREA81](https://area81.com.br)** — o blog
+- 🖥️ **[sshvterm.com](https://sshvterm.com)** — o SShvTerm
 - 🏢 **[blue3.com.br](https://blue3.com.br)** · **[b3dev.com.br](https://b3dev.com.br)**
 - ✉️ **samirhv@proton.me**
 
