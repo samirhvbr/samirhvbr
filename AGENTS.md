@@ -11,7 +11,15 @@
 > **[samirhvbr/repodocs](https://github.com/samirhvbr/repodocs)** — read it
 > there; do not copy it here.
 >
-> Commits: `versão - comentário em português`, with the version coming from
+> **Language: everything that lands on GitHub is written in English.** Commit
+> messages, `version.md` and its changelog, the README, these agent docs, branch
+> names, PR and issue titles and bodies, and Release notes. Decided in `0.1.2`:
+> the profile page is read by a mostly international audience, so the repo should
+> not switch languages between what it shows and how it is written. This is a
+> deliberate deviation from the fleet default — the norm in `repodocs` is
+> Portuguese, and the other repos keep it.
+>
+> Commits: `version - short description in English`, with the version coming from
 > `version.md` and bumped in the same commit. Conventional Commits prefixes
 > (`feat:`, `fix:`, `chore:`) and vague messages are forbidden.
 

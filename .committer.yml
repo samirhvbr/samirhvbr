@@ -3,5 +3,5 @@
 # Discovery: ~/x/GIT/run.sh (cron) finds whoever carries this marker.
 enabled: true
 push: true
-branch_only: main
+branch_only: master
 fallback: sonnet

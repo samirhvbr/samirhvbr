@@ -1,10 +1,10 @@
 # Version — GitHub Profile — samirhvbr
 
-**Current version:** `1.0.1`
+**Current version:** `1.0.2`
 
 GitHub profile README (@samirhvbr), terminal aesthetic.
 
-> Working branch: **`main`**. What lives here shows up on the profile page, so a
+> Default branch: **`master`**. What lives here shows up on the profile page, so a
 > layout change is a public change — it earns the bump.
 
 > This file is the **source of truth** for the project version: anything that needs
@@ -45,10 +45,31 @@ X.Y.Z - Short description in English
 
 1. The version **always** comes from this `version.md` — bump it **in the same commit**
    as the change.
-2. Message in **English**, specific enough for `git log --grep`.
+2. Message in **English**, specific enough for `git log --grep` — see §2.1.
 3. Conventional Commits (`feat:`, `fix:`, `chore:`…) and vague messages ("tweak",
    "update", "wip") are **forbidden**.
 4. One objective per commit.
+
+### 2.1. Language — English on GitHub
+
+**Everything that lands on GitHub is written in English.** Not just the commit
+message: this `version.md` and its changelog, the README, `CLAUDE.md` / `AGENTS.md`,
+branch names, PR and issue titles and bodies, and Release notes.
+
+This is a **deliberate deviation from the fleet default**. The norm in
+[repodocs](https://github.com/samirhvbr/repodocs) is Portuguese and the other repos
+keep it; this repo is the profile page, read by a mostly international audience, so
+it should not switch languages between what it shows and how it is written.
+
+Whoever writes here in Portuguese is not making a small style slip — they are reading
+a stale rule. The rule lives in **three** places that must agree: this section,
+`CLAUDE.md` and `AGENTS.md`. If they ever disagree, the agent docs are what an agent
+actually reads before committing, so fix those first.
+
+> **Known exception, left on purpose:** commit `1.0.1` is in Portuguese. It was
+> written while `CLAUDE.md` still said `versão - comentário em português`, and it is
+> not worth rewriting published history to fix — the tag and the Release point at it.
+> `1.0.2` is what closes that gap in the docs.
 
 > **The COMMITTER skill commits for you in this repo** (there is a `.committer.yml`
 > at the root). Write the changelog entry below when you finish the delivery: that is
@@ -61,6 +82,37 @@ X.Y.Z - Short description in English
 ## 3. Changelog
 
 > Descending order (most recent on top).
+
+### `1.0.2` — 2026-09-03 — English on GitHub is stated where agents read it; default branch back to master
+
+`0.1.2` put "message in English" in `version.md` and stopped there. `CLAUDE.md` and
+`AGENTS.md` — the files an agent reads *before* it commits — still said
+`versão - comentário em português`. So the rule existed and was contradicted at the
+exact moment it applied, and commit `1.0.1` came out in Portuguese. That is not a
+slip by whoever committed; it is what the docs told them to do.
+
+Both agent docs now carry the language rule, and `version.md` gains **§2.1**, which
+widens it past commit messages to everything that lands on GitHub: changelog, README,
+agent docs, branch names, PR and issue text, Release notes.
+
+`1.0.1` stays in Portuguese on purpose — rewriting published history to fix a commit
+subject is not worth it when a tag and a Release already point at it. It is recorded
+as a known exception in §2.1 instead of being quietly cleaned up.
+
+The default branch is renamed **`main` → `master`** in this same delivery, aligning
+this repo with the rest of the fleet, and `.committer.yml` follows it
+(`branch_only: master`). The rename goes through GitHub's own branch-rename, which
+retargets open PRs and leaves a redirect, rather than a push-new/delete-old that would
+drop both. `release.yml` already listened on `[master, main]`, so the automation needed
+no change.
+
+Note on the `0.1.1` entry below: it originally said "master", `1.0.2` of this file had
+corrected it to "main" because that was the branch at the time, and the branch is now
+`master` again. The entry is left describing what was true when it was written — the
+changelog is a record, not a live mirror of the current layout.
+
+_Triggers:_ published rule changed; document of the set changed; structure another tool
+consumes altered (`.committer.yml`).
 
 ### `1.0.1` — 2026-09-02 — Regra de Releases no doc de agente: bump e Release sao um ato so
 
