@@ -13,94 +13,94 @@ $ fastfetch --profile samir
 
 samir@github
 ──────────────────────────────────────────────────────
-Nome         Samir Hanna Verza
-Host         Brasil
-Empresas     Blue3 · B3dev
-Função       builder full-stack · engenharia de IA/LLM
+Name         Samir Hanna Verza
+Host         Brazil
+Companies    Blue3 · B3dev
+Role         full-stack builder · AI/LLM engineering
 Kernel       Rust · Ruby · PHP · Java · TypeScript · Python
-Shell        bash · anna (CLI agêntica que eu construí)
-DE           GNOME (com extensões próprias)
-Superfícies  web · desktop · mobile · terminal
-Uptime       sempre buildando
+Shell        bash · anna (agentic CLI I built)
+DE           GNOME (with my own extensions)
+Surfaces     web · desktop · mobile · terminal
+Uptime       always building
 ```
 
-## `$ cat ~/ecossistema.mmd`
+## `$ cat ~/ecosystem.mmd`
 
 ```mermaid
 graph LR
-    EU(("@samirhvbr")) --> B["🏢 Blue3 · B3dev"]
-    EU --> T["🖥️ SShvTerm<br/>terminal SSH com IA"]
-    EU --> OSS["🌱 open source"]
-    B --> S["🧠 SHVIA<br/>plataforma de IA"]
-    B --> E["📊 EOP<br/>plataforma p/ ISPs"]
+    ME(("@samirhvbr")) --> B["🏢 Blue3 · B3dev"]
+    ME --> T["🖥️ SShvTerm<br/>SSH terminal with AI"]
+    ME --> OSS["🌱 open source"]
+    B --> S["🧠 SHVIA<br/>AI platform"]
+    B --> E["📊 EOP<br/>platform for ISPs"]
     S --> W["🌐 web"]
     S --> D["🖥️ desktop · Tauri"]
     S --> M["📱 mobile · iOS/Android"]
-    S --> A["⌨️ anna · CLI agêntica em Rust"]
+    S --> A["⌨️ anna · agentic CLI in Rust"]
     OSS --> U["ai-usagebar<br/>GNOME · macOS · Windows"]
-    OSS --> LEB["AI-BENCHMARK<br/>LLMs em código legado"]
+    OSS --> LEB["AI-BENCHMARK<br/>LLMs on legacy code"]
 ```
 
-## `$ ls ~/produtos/`
+## `$ ls ~/products/`
 
-| projeto | o que é |
+| project | what it is |
 |---|---|
-| **[SHVIA](https://ia.blue3.com.br)** | Plataforma de IA multi-superfície — web, desktop (Tauri), [mobile iOS/Android](https://github.com/samirhvbr/SHVIA-MOBILE) e CLI. Gateway BYOK multi-provedor, voz (STT/TTS) e modo código. Nascida na [Blue3](https://blue3.com.br) / [B3dev](https://b3dev.com.br). |
-| **anna** | CLI agêntica em Rust — loop de ferramentas com gates de segurança, embutível em outros apps. É o motor de código do SHVIA. |
-| **[SShvTerm](https://sshvterm.com)** | Terminal SSH (desktop Tauri 2 + mobile) com agente de IA embarcado — o terminal que conversa. · [sshvterm.com](https://sshvterm.com) |
-| **EOP** | Enterprise Operating Platform — gestão ledger-first para provedores de internet, na Blue3. |
+| **[SHVIA](https://ia.blue3.com.br)** | Multi-surface AI platform — web, desktop (Tauri), [mobile iOS/Android](https://github.com/samirhvbr/SHVIA-MOBILE) and CLI. Multi-provider BYOK gateway, voice (STT/TTS) and code mode. Born at [Blue3](https://blue3.com.br) / [B3dev](https://b3dev.com.br). |
+| **anna** | Agentic CLI in Rust — tool loop with safety gates, embeddable in other apps. It is SHVIA's code engine. |
+| **[SShvTerm](https://sshvterm.com)** | SSH terminal (Tauri 2 desktop + mobile) with an embedded AI agent — the terminal that talks back. · [sshvterm.com](https://sshvterm.com) |
+| **EOP** | Enterprise Operating Platform — ledger-first management for internet service providers, at Blue3. |
 
 ## `$ ls ~/open-source/`
 
-- **[AI-BENCHMARK](https://github.com/samirhvbr/AI-BENCHMARK)** — RFC + harness do *LLM Engineering Benchmark*: mede LLMs consertando **código legado sem quebrar compat** — o oposto do greenfield
-- **[ai-usagebar](https://github.com/akitaonrails/ai-usagebar)** — integrações desktop (GNOME · macOS · Windows) contribuídas pro upstream
-- **[GITHUB-DESKTOP](https://github.com/samirhvbr/GITHUB-DESKTOP)** — fork do GitHub Desktop com dashboard multi-repo
-- **[hermes-agent](https://github.com/samirhvbr/hermes-agent)** — fork do agente open da Nous Research
-- **[Vitals](https://github.com/samirhvbr/Vitals)** · **[claude-desktop-debian](https://github.com/samirhvbr/claude-desktop-debian)** · Matomo · CSL-Redes — forks e contribuições do dia a dia
+- **[AI-BENCHMARK](https://github.com/samirhvbr/AI-BENCHMARK)** — RFC + harness for the *LLM Engineering Benchmark*: measures LLMs fixing **legacy code without breaking compatibility** — the opposite of greenfield
+- **[ai-usagebar](https://github.com/akitaonrails/ai-usagebar)** — desktop integrations (GNOME · macOS · Windows) contributed upstream
+- **[GITHUB-DESKTOP](https://github.com/samirhvbr/GITHUB-DESKTOP)** — GitHub Desktop fork with a multi-repo dashboard
+- **[hermes-agent](https://github.com/samirhvbr/hermes-agent)** — fork of Nous Research's open agent
+- **[Vitals](https://github.com/samirhvbr/Vitals)** · **[claude-desktop-debian](https://github.com/samirhvbr/claude-desktop-debian)** · Matomo · CSL-Redes — day-to-day forks and contributions
 
 ## `$ cat ~/.config/stack.toml`
 
 ```toml
-[linguagens]
-diarias     = ["Rust", "Ruby", "PHP", "TypeScript", "Java", "Python", "Swift"]
+[languages]
+daily       = ["Rust", "Ruby", "PHP", "TypeScript", "Java", "Python", "Swift"]
 
 [frameworks]
 apps        = ["Tauri 2", "Rails", "Laravel", "Spring Boot", "React + Vite"]
 
-[dados]
-bancos      = ["PostgreSQL", "PostGIS", "pgvector", "MariaDB"]
+[data]
+databases   = ["PostgreSQL", "PostGIS", "pgvector", "MariaDB"]
 
-[ia]
-frentes     = ["gateways de inferência", "agentes", "RAG", "STT/TTS", "benchmark de LLM"]
+[ai]
+tracks      = ["inference gateways", "agents", "RAG", "STT/TTS", "LLM benchmarking"]
 
-[superficies]
-alvo        = ["web", "desktop Linux/macOS/Windows", "mobile iOS/Android", "CLI", "GNOME Shell"]
+[surfaces]
+targets     = ["web", "desktop Linux/macOS/Windows", "mobile iOS/Android", "CLI", "GNOME Shell"]
 ```
 
 ## `$ history | tail -3`
 
 ```text
- 998  publicar o cliente mobile do SHVIA nas lojas
- 999  contribuir as integrações desktop do ai-usagebar pro upstream
-1000  especificar o LLM Engineering Benchmark — IA em código legado
+ 998  ship the SHVIA mobile client to the app stores
+ 999  contribute the ai-usagebar desktop integrations upstream
+1000  spec out the LLM Engineering Benchmark — AI on legacy code
 ```
 
 ## `$ gh stats --user samirhvbr`
 
 <div align="center">
 
-[![seguidores](https://img.shields.io/github/followers/samirhvbr?style=for-the-badge&logo=github&label=seguidores&labelColor=161b22&color=1f6feb)](https://github.com/samirhvbr?tab=followers)
+[![followers](https://img.shields.io/github/followers/samirhvbr?style=for-the-badge&logo=github&label=followers&labelColor=161b22&color=1f6feb)](https://github.com/samirhvbr?tab=followers)
 ![GitHub Developer Program](https://img.shields.io/badge/GitHub-Developer_Program-238636?style=for-the-badge&logo=github&labelColor=161b22)
-![feito no Brasil](https://img.shields.io/badge/feito_no-Brasil-009c3b?style=for-the-badge&labelColor=161b22)
+![made in Brazil](https://img.shields.io/badge/made_in-Brazil-009c3b?style=for-the-badge&labelColor=161b22)
 
 </div>
 
 ## `$ ping samir`
 
-- 🌐 **[samirhv.com.br](https://samirhv.com.br)** — página pessoal & central de downloads
-- ✍️ **[AREA81](https://area81.com.br)** — o blog
-- 🖥️ **[sshvterm.com](https://sshvterm.com)** — o SShvTerm
+- 🌐 **[samirhv.com.br](https://samirhv.com.br)** — personal page & download hub
+- ✍️ **[AREA81](https://area81.com.br)** — the blog
+- 🖥️ **[sshvterm.com](https://sshvterm.com)** — SShvTerm
 - 🏢 **[blue3.com.br](https://blue3.com.br)** · **[b3dev.com.br](https://b3dev.com.br)**
 - ✉️ **samirhv@proton.me**
 
-<div align="center"><sub><code>$ exit</code> — o prompt fica aberto · <b>do backend ao binário</b> 🇧🇷</sub></div>
+<div align="center"><sub><code>$ exit</code> — the prompt stays open · <b>from backend to binary</b> 🇧🇷</sub></div>

@@ -1,6 +1,6 @@
-# Opt-in do COMMITTER neste repositório (ADR-004 do skill-COMMITTER).
-# A presença deste arquivo é o opt-in; as chaves só RESTRINGEM (SPEC.md §2).
-# Varredura: ~/x/GIT/run.sh (cron) descobre quem tem este marcador.
+# COMMITTER opt-in for this repository (ADR-004 of skill-COMMITTER).
+# The presence of this file IS the opt-in; the keys below only RESTRICT (SPEC.md §2).
+# Discovery: ~/x/GIT/run.sh (cron) finds whoever carries this marker.
 enabled: true
 push: true
 branch_only: main

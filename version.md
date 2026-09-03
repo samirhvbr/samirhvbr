@@ -1,89 +1,108 @@
-# Versão — Perfil GitHub — samirhvbr
+# Version — GitHub Profile — samirhvbr
 
-**Versão atual:** `0.1.1`
+**Current version:** `0.1.2`
 
-README de perfil do GitHub (@samirhvbr), com estética de terminal.
+GitHub profile README (@samirhvbr), terminal aesthetic.
 
-> Branch de trabalho: **`main`**. O conteúdo daqui aparece na página do perfil, então
-> mudança de layout é mudança pública — vale o bump.
+> Working branch: **`main`**. What lives here shows up on the profile page, so a
+> layout change is a public change — it earns the bump.
 
-> Este arquivo é a **fonte da verdade** da versão do projeto: quem precisar exibir ou
-> reportar a versão extrai o **primeiro número semver (`X.Y.Z`)** encontrado aqui.
-> Mantenha a linha **"Versão atual"** como a primeira ocorrência de um número.
+> This file is the **source of truth** for the project version: anything that needs
+> to show or report the version extracts the **first semver number (`X.Y.Z`)** found
+> here. Keep the **"Current version"** line as the first occurrence of a number.
 >
-> `0.1.0` marca o início do **versionamento**, não o início do projeto — o que veio
-> antes continua no `git log`.
+> `0.1.0` marks the start of **versioning**, not the start of the project — whatever
+> came before stays in the `git log`.
 
 ---
 
-## 1. Convenção de Versionamento (`X.Y.Z`)
+## 1. Versioning Convention (`X.Y.Z`)
 
-| Componente | Significado | Como sobe |
+| Component | Meaning | How it moves |
 |---|---|---|
-| **X** | Release estável | Manual |
-| **Y** | Mudança estrutural — Nova seção do conjunto, mudança de escopo, reorganização estrutural. | Manual |
-| **Z** | Incremento a cada entrega (ver gatilhos) | A cada entrega |
+| **X** | Stable release | Manual |
+| **Y** | Structural change — new section in the set, scope change, structural reorganization. | Manual |
+| **Z** | Increment on every delivery (see triggers) | Every delivery |
 
-### Gatilhos de bump do `Z`
+### `Z` bump triggers
 
-- Criar ou remover um **documento** do conjunto.
-- Mudar uma **regra, decisão ou procedimento** já publicado.
-- Alterar **estrutura ou formato** que outra ferramenta consome.
-- Adicionar ou alterar **dado/exemplo** que serve de referência.
+- Creating or removing a **document** from the set.
+- Changing a **rule, decision or procedure** already published.
+- Altering **structure or format** that another tool consumes.
+- Adding or changing **data/examples** that serve as reference.
 
-> Correção de texto, comentário e formatação **não** exigem bump.
+> Text fixes, comments and formatting do **not** require a bump.
 
 ---
 
-## 2. Formato de Commit Obrigatório
+## 2. Mandatory Commit Format
 
 ```
-X.Y.Z - Descrição curta em português
+X.Y.Z - Short description in English
 ```
 
-**Regras inegociáveis:**
+**Non-negotiable rules:**
 
-1. A versão **sempre** vem deste `version.md` — bumpe **no mesmo commit** da mudança.
-2. Mensagem em **português**, específica o suficiente para `git log --grep`.
-3. **Proibido** Conventional Commits (`feat:`, `fix:`, `chore:`…) e mensagens vagas
-   ("ajuste", "update", "wip").
-4. Um objetivo por commit.
+1. The version **always** comes from this `version.md` — bump it **in the same commit**
+   as the change.
+2. Message in **English**, specific enough for `git log --grep`.
+3. Conventional Commits (`feat:`, `fix:`, `chore:`…) and vague messages ("tweak",
+   "update", "wip") are **forbidden**.
+4. One objective per commit.
 
-> **A skill COMMITTER commita por você neste repo** (existe `.committer.yml` na raiz).
-> Escreva a entrada de changelog abaixo ao concluir a entrega: é **dali** que a
-> mensagem do commit sai, sem custo de modelo. Sem a entrada, a skill cai num
-> fallback que gasta tokens e descreve pior do que você. Detalhe no bloco PS do
-> `CLAUDE.md`.
+> **The COMMITTER skill commits for you in this repo** (there is a `.committer.yml`
+> at the root). Write the changelog entry below when you finish the delivery: that is
+> **where** the commit message comes from, at no model cost. Without the entry, the
+> skill falls back to a path that burns tokens and describes the work worse than you
+> would. Details in the PS block of `CLAUDE.md`.
 
 ---
 
 ## 3. Changelog
 
-> Ordem decrescente (mais recente no topo).
+> Descending order (most recent on top).
 
-### `0.1.1` — 2026-09-02 — Releases automaticas: o version.md da master vira tag e Release
+### `0.1.2` — 2026-09-02 — Everything in English, including the commit convention
 
-O GitHub nao deduz versao de mensagem de commit: sem tag, o numero e string no
-`git log` e `git diff` entre versoes nao existe. Entram o
-`.github/workflows/release.yml` e o `tools/release.sh`.
+The profile README is the page a mostly international audience lands on, so it is now
+written in English: the `fastfetch` block, the Mermaid ecosystem graph, the product
+and open-source tables, `stack.toml` and the badge labels.
 
-**A regra:** o `version.md` da branch padrao **no GitHub** e o que as Releases
-**no GitHub** refletem. Checkout local nao entra na conta. Um PR nao publica
-nada; no merge, o push do `version.md` dispara o workflow e a Release vira
-aquela versao.
+The convention docs follow the content: this `version.md` and the comments in
+`.committer.yml` are in English too, and rule 2 of the commit format now reads
+**English** instead of Portuguese. This repo deliberately diverges from the rest of
+the fleet on commit language — the norm elsewhere stays Portuguese.
 
-Tag e titulo = a versao pura, sem prefixo `v`. Norma:
+Also fixed: the `0.1.1` entry said the Releases follow "the `version.md` on **master**",
+but the working branch here is **`main`** — `.committer.yml` pins `branch_only: main`.
+The workflow already listened on both, so nothing was broken in practice; the text was.
+
+_Triggers:_ published rule changed (commit language); format that another tool consumes
+altered.
+
+### `0.1.1` — 2026-09-02 — Automatic releases: the version.md on main becomes a tag and a Release
+
+GitHub does not infer a version from a commit message: without a tag, the number is a
+string in the `git log` and a `git diff` between versions does not exist. Enter
+`.github/workflows/release.yml` and `tools/release.sh`.
+
+**The rule:** the `version.md` on the default branch **on GitHub** is what the Releases
+**on GitHub** reflect. A local checkout does not enter the calculation. A PR publishes
+nothing; on merge, the push of `version.md` triggers the workflow and the Release
+becomes that version.
+
+Tag and title = the bare version, no `v` prefix. Norm:
 [samirhvbr/repodocs](https://github.com/samirhvbr/repodocs/blob/master/docs/versioning.md).
 
-### `0.1.0` — 2026-07-30 — Adota o versionamento da casa
+### `0.1.0` — 2026-07-30 — Adopts the house versioning
 
-Passa a seguir o padrão dos demais repositórios: `version.md` como fonte da verdade,
-commits no formato `X.Y.Z - Descrição em português` e changelog como registro de
-entrega.
+Starts following the pattern of the other repositories: `version.md` as the source of
+truth, commits in the `X.Y.Z - Description` format and a changelog as the delivery
+record.
 
-O gatilho foi prático: o repo já participava da skill **COMMITTER**, mas sem
-`version.md` não existia o formato da casa — o ciclo reportava e **não commitava**.
-Com este arquivo, a skill passa a operar aqui pelo caminho determinístico (sem custo
-de modelo), lendo a mensagem da entrada de changelog.
+The trigger was practical: the repo already took part in the **COMMITTER** skill, but
+without a `version.md` there was no house format — the cycle reported and did **not**
+commit. With this file, the skill starts operating here through the deterministic path
+(at no model cost), reading the message from the changelog entry.
 
-_Gatilhos:_ adoção de infraestrutura de versionamento.
+_Triggers:_ adoption of versioning infrastructure.
