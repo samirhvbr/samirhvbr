@@ -24,7 +24,7 @@ Surfaces     web · desktop · mobile · terminal
 Uptime       always building
 ```
 
-## `$ cat ~/ecosystem.mmd`
+## `$ cat ~/ecosystem.md`
 
 ```mermaid
 graph LR

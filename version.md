@@ -1,6 +1,6 @@
 # Version — GitHub Profile — samirhvbr
 
-**Current version:** `0.1.2`
+**Current version:** `1.0.0`
 
 GitHub profile README (@samirhvbr), terminal aesthetic.
 
@@ -61,6 +61,21 @@ X.Y.Z - Short description in English
 ## 3. Changelog
 
 > Descending order (most recent on top).
+
+### `1.0.0` — 2026-09-02 — First stable release of the profile
+
+Declares the profile stable at `1.0.0`. The three pieces that make it one are in
+place: the content is in English, the versioning convention is documented and
+followed, and the Release automation publishes a tag per version without anyone
+asking it to.
+
+Content change in this delivery: the ecosystem section header reads
+`$ cat ~/ecosystem.md` instead of `.mmd`. Both are defensible — `.mmd` is the
+conventional extension for a raw Mermaid file — but what the section actually shows
+is a fenced `mermaid` block inside a Markdown document, which a bare `.mmd` would
+not carry. `.md` is the honest description of what is being `cat`-ed.
+
+_Triggers:_ stable release (manual **X** bump); reference content changed.
 
 ### `0.1.2` — 2026-09-02 — Everything in English, including the commit convention
 
