@@ -1,6 +1,6 @@
 # Version — GitHub Profile — samirhvbr
 
-**Current version:** `1.0.4`
+**Current version:** `1.0.5`
 
 GitHub profile README (@samirhvbr), terminal aesthetic.
 
