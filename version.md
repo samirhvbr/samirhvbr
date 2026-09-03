@@ -1,6 +1,6 @@
 # Version — GitHub Profile — samirhvbr
 
-**Current version:** `1.0.2`
+**Current version:** `1.0.3`
 
 GitHub profile README (@samirhvbr), terminal aesthetic.
 
@@ -82,6 +82,19 @@ actually reads before committing, so fix those first.
 ## 3. Changelog
 
 > Descending order (most recent on top).
+
+### `1.0.3` — 2026-09-02 — Agent doc: Releases rule and the English-only language rule
+
+Marked echo of the single source at samirhvbr/repodocs. Two rules land here:
+
+1. The `version.md` of the default branch ON GITHUB is what the GitHub Releases
+   show, and a commit that bumps it is not finished until that version has a
+   tag, a Release and the `Latest` badge — same push, not "later".
+2. Everything in this repository is English (US): documents, commit messages,
+   pull requests, issues, code comments. The only carve-out is end-user-facing
+   product strings. History is not rewritten.
+
+Delimited by a marker, so re-running replaces instead of duplicating.
 
 ### `1.0.2` — 2026-09-03 — English on GitHub is stated where agents read it; default branch back to master
 
