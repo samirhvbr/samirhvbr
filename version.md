@@ -1,6 +1,6 @@
 # Version — GitHub Profile — samirhvbr
 
-**Current version:** `1.0.0`
+**Current version:** `1.0.1`
 
 GitHub profile README (@samirhvbr), terminal aesthetic.
 
@@ -61,6 +61,15 @@ X.Y.Z - Short description in English
 ## 3. Changelog
 
 > Descending order (most recent on top).
+
+### `1.0.1` — 2026-09-02 — Regra de Releases no doc de agente: bump e Release sao um ato so
+
+Eco marcado da norma unica em samirhvbr/repodocs (docs/versioning.md). O
+`version.md` da branch padrao NO GITHUB e o que as Releases no GitHub mostram, e
+um commit que bumpa o `version.md` nao esta terminado ate aquela versao ter tag,
+Release e o badge `Latest`.
+
+Bloco delimitado por marcador: rodar de novo substitui, nao duplica.
 
 ### `1.0.0` — 2026-09-02 — First stable release of the profile
 
