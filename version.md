@@ -1,6 +1,6 @@
 # Version — GitHub Profile — samirhvbr
 
-**Current version:** `1.0.8`
+**Current version:** `1.0.9`
 
 GitHub profile README (@samirhvbr), terminal aesthetic.
 
@@ -82,6 +82,35 @@ actually reads before committing, so fix those first.
 ## 3. Changelog
 
 > Descending order (most recent on top).
+
+### `1.0.9` — 2026-09-07 — The changelog stays in this file, and the git hooks arrive from repodocs
+
+`1.0.8` installed the two hooks of the standard and, in the same pass, created a
+`CHANGELOG.md` at the root — a second changelog in a repository that has kept
+its record in §3 of this file since `0.1.0`. Two changelogs in one repository
+drift, and this is the file that decides what a version means, so the duplicate
+is removed and the record stays here. The fleet script was corrected upstream in
+repodocs `1.9.4`: it now leaves a repository of this shape alone and reports it.
+
+What `1.0.8` did install stays: `commit-msg` checks the subject's shape and
+**that the `X.Y.Z` in it is the version this file carries in the same commit**,
+and `pre-push` compares this file against the remote default branch for a
+repeated or a backwards version, only for a push that actually updates that
+branch. Enable them in a fresh clone with
+`git config core.hooksPath tools/git-hooks`; the escape hatch is
+`REPODOCS_NO_HOOK=1`.
+
+Two notes this delivery makes true again, both of them stale above: the fleet
+default is **English (US)** everywhere since ADR-014, so §2.1 describes an
+alignment rather than a deviation; and the **COMMITTER skill no longer commits**
+— it was switched off across the fleet on 03/09/2026 (ADR-016). The agent that
+writes the entry is the agent that commits it.
+
+The redundant `origin/main` was deleted in this same pass: `master` is the
+default branch and had been five commits behind it, which meant the profile page
+was rendering stale content.
+
+_Triggers:_ published rule changed; structure another tool consumes altered.
 
 ### `1.0.3` — 2026-09-02 — Agent doc: Releases rule and the English-only language rule
 
