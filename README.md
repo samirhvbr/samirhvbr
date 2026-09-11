@@ -31,6 +31,7 @@ graph LR
     ME(("@samirhvbr")) --> B["🏢 Blue3 · B3dev"]
     ME --> T["🖥️ SShvTerm<br/>SSH terminal with AI"]
     ME --> OSS["🌱 open source"]
+    OSS --> TN["📝 Tura Notes<br/>local-first Markdown"]
     B --> S["🧠 SHVIA<br/>AI platform"]
     B --> E["📊 EOP<br/>platform for ISPs"]
     S --> W["🌐 web"]
@@ -48,6 +49,7 @@ graph LR
 | **[SHVIA](https://ia.blue3.com.br)** | Multi-surface AI platform — web, desktop (Tauri), [mobile iOS/Android](https://github.com/samirhvbr/SHVIA-MOBILE) and CLI. Multi-provider BYOK gateway, voice (STT/TTS) and code mode. Born at [Blue3](https://blue3.com.br) / [B3dev](https://b3dev.com.br). |
 | **anna** | Agentic CLI in Rust — tool loop with safety gates, embeddable in other apps. It is SHVIA's code engine. |
 | **[SShvTerm](https://sshvterm.com)** | SSH terminal (Tauri 2 desktop + mobile) with an embedded AI agent — the terminal that talks back. · [sshvterm.com](https://sshvterm.com) |
+| **[Tura Notes](https://github.com/samirhvbr/tura-notes)** | Local-first Markdown notes — Tauri 2 + Rust. You pick a folder, the `.md` files in it are your notes: no proprietary format, no account, no cloud of mine. Ships an MCP server so an agent can read and write them. MIT. · [download](https://samirhv.com.br/p/tura-notes) |
 | **EOP** | Enterprise Operating Platform — ledger-first management for internet service providers, at Blue3. |
 
 ## `$ ls ~/open-source/`

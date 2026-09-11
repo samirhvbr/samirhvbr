@@ -1,6 +1,6 @@
 # Version — GitHub Profile — samirhvbr
 
-**Current version:** `1.0.10`
+**Current version:** `1.0.11`
 
 GitHub profile README (@samirhvbr), terminal aesthetic.
 
@@ -82,6 +82,22 @@ actually reads before committing, so fix those first.
 ## 3. Changelog
 
 > Descending order (most recent on top).
+
+### `1.0.11` — 2026-09-11 — Tura Notes enters the profile
+
+The profile listed four products and five open-source entries and named Tura
+Notes in neither, so the one application here that a stranger can download,
+install and read the source of was the one the page did not mention.
+
+It goes in `~/products/` rather than in `~/open-source/`: that list is forks and
+contributions upstream, and this is an original MIT application with its own
+download page. The row names what it is in one sentence — a folder of `.md`
+files that stay readable without it — and links both the repository and
+[samirhv.com.br/p/tura-notes](https://samirhv.com.br/p/tura-notes), which is
+where the signed macOS build is served. The ecosystem graph gains the matching
+node under the open-source branch.
+
+_Triggers:_ reference data added.
 
 ### `1.0.9` — 2026-09-07 — The changelog stays in this file, and the git hooks arrive from repodocs
 
